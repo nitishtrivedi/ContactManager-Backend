@@ -7,18 +7,35 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "Database", "contacts.db");
-builder.Services.AddDbContext<ContactContext>(options => options.UseSqlite($"Data Source={dbPath}"));
+//COMMENTED OUT AS NOT USING SQLITE
+//builder.Services.AddDbContext<ContactContext>(options => options.UseSqlite($"Data Source={dbPath}"));
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AngularApplication", policy =>
+    var corsPolicyName = "AngularApplication";
+    var isDevelopment = builder.Environment.IsDevelopment();
+    if (isDevelopment)
     {
-        policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
-    });
+        options.AddPolicy(corsPolicyName, policy =>
+        {
+            policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+        });
+    } else
+    {
+        options.AddPolicy(corsPolicyName, policy =>
+        {
+            policy.WithOrigins("").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+        });
+    }
 });
 
 
 var app = builder.Build();
 
+
+app.UseStaticFiles();
+
+app.UseRouting();
 
 app.UseCors("AngularApplication");
 
