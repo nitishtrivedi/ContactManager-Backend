@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\E Drive Files\\MY DEVELOPMENT WORK\\Contact-Manager\\Backend\\ContactManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|e:\\e drive files\\my development work\\contact-manager\\backend\\contactmanager\\contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|e:\\e drive files\\my development work\\contact-manager\\backend\\contactmanager\\contactmanager\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|e:\\e drive files\\my development work\\contact-manager\\backend\\contactmanager\\contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AA7D489-CAF7-4A4C-BEBF-AC953AF4151A}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\E Drive Files\\MY DEVELOPMENT WORK\\Contact-Manager\\Backend\\ContactManager\\ContactManager\\Program.cs",
               "RelativeDocumentMoniker": "ContactManager\\Program.cs",
@@ -35,13 +35,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Contact.cs",
               "DocumentMoniker": "E:\\E Drive Files\\MY DEVELOPMENT WORK\\Contact-Manager\\Backend\\ContactManager\\ContactManager\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "ContactManager\\Models\\Contact.cs",
               "ToolTip": "E:\\E Drive Files\\MY DEVELOPMENT WORK\\Contact-Manager\\Backend\\ContactManager\\ContactManager\\Models\\Contact.cs",
               "RelativeToolTip": "ContactManager\\Models\\Contact.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowA0AAAAVAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA5wBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T14:02:10.106Z",
               "EditorCaption": ""
