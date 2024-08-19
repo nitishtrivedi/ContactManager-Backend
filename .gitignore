@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/ContactManager/FileContentIndex/8bfe04a4-77fc-40a7-8c9c-badfa08145e1.vsidx
-/.vs/ContactManager/FileContentIndex/8bfe04a4-77fc-40a7-8c9c-badfa08145e1.vsidx
-*.vsidx
-/.vs
+.vs
+/ContactManager/bin
+/ContactManager/obj
+/ContactManager/Debug
