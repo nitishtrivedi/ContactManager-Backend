@@ -7,9 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "Database", "contacts.db");
-//COMMENTED OUT AS NOT USING SQLITE
-//builder.Services.AddDbContext<ContactContext>(options => options.UseSqlite($"Data Source={dbPath}"));
+//SQLITE DB PATH
+builder.Services.AddDbContext<ContactContext>(options => options.UseSqlite($"Data Source={dbPath}"));
 
+//CONNECTED TO MYSQL DB ON FREESQLDATABASE.COM
+//builder.Services.AddDbContext<ContactContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("MySqlDev")));
+
+//CONNECTED TO SQLSERVER DATABASE ON SOMEE.COM
+//builder.Services.AddDbContext<ContactContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerDev")));
+
+//CORS
 builder.Services.AddCors(options =>
 {
     var corsPolicyName = "AngularApplication";
@@ -24,18 +31,18 @@ builder.Services.AddCors(options =>
     {
         options.AddPolicy(corsPolicyName, policy =>
         {
-            policy.WithOrigins("").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+            policy.WithOrigins("https://contactmanager-4635b.web.app").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
         });
     }
 });
 
 
+
+//MAIN RUN METHOD
 var app = builder.Build();
 
 
-app.UseStaticFiles();
 
-app.UseRouting();
 
 app.UseCors("AngularApplication");
 

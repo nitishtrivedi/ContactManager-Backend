@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContactManager.Migrations
 {
     [DbContext(typeof(ContactContext))]
-    [Migration("20240817140709_AddedNewFields")]
-    partial class AddedNewFields
+    [Migration("20240821171850_AddedSqliteAgain")]
+    partial class AddedSqliteAgain
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,8 +31,8 @@ namespace ContactManager.Migrations
                     b.Property<string>("City")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Country")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Country")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
